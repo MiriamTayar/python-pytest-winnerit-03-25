@@ -1,7 +1,7 @@
 import pytest
 from assertpy import assert_that
 
-
+@pytest.mark.unit
 def test_assertion_raises():
     with pytest.raises(ZeroDivisionError) as err:
         5/0
